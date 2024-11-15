@@ -19,23 +19,28 @@
 
     <div class="plan" onclick="platire()">
         <h3>Abonament de bază</h3>
-        <p>Acces limitat la 2ore/zi </p>
-        <p>Preț: Gratis</p>
+        <p>Acces limitat la 8 ore/zi </p>
+        <p>Preț: 0.99lei/lună</p>
     </div>
 
     <div class="plan" onclick="platire()">
         <h3>Abonament Standard</h3>
-        <p>Acces limitat la 12ore/zi + Playlist-uri personalizate </p>
-        <p>Preț: 10lei/lună</p>
+        <p>Acces limitat la 12 ore/zi + Playlist-uri personalizate </p>
+        <p>Preț: 10 lei/lună</p>
     </div>
 
     <div class="plan" onclick="platire()">
         <h3>Abonament Premium</h3>
         <p>Acces nelimitat + Status VIP + Early Acces</p>
-        <p>Preț: 100lei/lună</p>
+        <p>Preț: 100 lei/lună</p>
     </div>
-    <button class="login-button" onclick="conectare()">Conectare</button>
+    <button id="conectareButton" class="login-button">Conectare</button>
 </div>
 <script src="script.js"></script>
+<script>
+    document.getElementById('conectareButton').addEventListener('click', function() {
+        window.location.href = 'http://localhost/conectare.html';
+    });
+</script>
 </body>
 </html>
